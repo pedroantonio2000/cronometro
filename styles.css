@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    
+    background-color: black;
 }
 
 
@@ -12,8 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    background-color: black;
+    gap: 1.5rem;
     height: 100vh;
 }
 
@@ -25,20 +24,17 @@
     display: flex;
     font-size: 55px;
     font-weight: bold;
-    
 }
 
 .tempo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
     color: #00aeff;
     min-width: 90px;
 }
 
 .separator {
-    padding: 0 10px;
     color: #00aeff;
 }
 
@@ -69,15 +65,27 @@
 }
 
 
-#pausarBtn
- {
+#pausarBtn {
     display: none;
+    background-color: #fff;
 }
 
 #continuarBtn {
     display: none;
+    background-color: #fff;
 }
 
 #iniciarBtn {
     background-color: #00aeff;
+    border: #00aeff;
+}
+
+#resetarBtn {
+    background-color: #fff;
+}
+
+@media (max-width: 400px) {
+    .container h1 {
+        text-align: center;
+    }
 }
